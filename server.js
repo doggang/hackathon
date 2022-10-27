@@ -5,9 +5,7 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 
 app.use(methodOverride('_method'));
-// require('dotenv').config()
-
-// app.use(express.static(__dirname+'/public/'));
+app.use(express.static(__dirname+'/public/'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -15,6 +13,19 @@ app.listen(80, (req, res) => {
   console.log('server on! http://localhost:'+80);
 })
 
+
+app.get('/', (req, res) => {
+  res.render('main')
+})
+
+// Routes 부분
+app.use('/example', require('./routes/example')); // 1
+
+
+
+
+
+// DB Connect 부분.
 mongoose.connect(
   'mongodb+srv://okmlnsunok:jyp1234@cluster0.i8mgpkg.mongodb.net/hk?retryWrites=true&w=majority',
   {
