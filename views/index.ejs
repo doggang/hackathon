@@ -102,6 +102,44 @@
 
         
     </article>
+
+    <span><%= date %></span>
+      <table class="table align-middle mt-1">
+        <thead class="table-info">
+          <tr>
+            <td>시간</td>
+            <% for(let i=0; i<hourly.length; i++) {%>
+            <td><%= hourly[i][0] %>시</td>
+            <% }%>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>온도</td>
+            <% for(let i=0; i<hourly.length; i++) {%>
+              <td><%= hourly[i][1] %>℃</td>
+              <% }%>
+          </tr>
+          <tr>
+            <td>체감온도</td>
+            <% for(let i=0; i<hourly.length; i++) {%>
+              <td><%= hourly[i][2] %>℃</td>
+              <% }%>
+          </tr>
+          <tr>
+            <td>습도</td>
+            <% for(let i=0; i<hourly.length; i++) {%>
+              <td><%= hourly[i][4] %>%</td>
+              <% }%>
+          </tr>
+          <tr>
+            <td>기상</td>
+            <% for(let i=0; i<hourly.length; i++) {%>
+              <td><%= hourly[i][3] %></td>
+              <% }%>
+          </tr>
+        </tbody>
+      </table>
     
     <footer>
         <div id="footer_content">
