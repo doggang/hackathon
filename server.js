@@ -44,18 +44,19 @@ app.get('/', (req, res) => {
 
 var market_api_url = "https://api.odcloud.kr/api/15052836/v1/uddi:2253111c-b6f3-45ad-9d66-924fd92dabd7?page=5&perPage=10&serviceKey=Itx27hoOTX7JREb%2F0H%2FTuLY76tqW3vaUz6nmcS6bBKP%2BIwYhdA6m%2BmFxOugAS%2B9kbwxlIGOw8gf%2BDgeUoBKzzw%3D%3D";
 
-var 시장데이터 = [];
 
 app.get('/market/:id', (req, res) => {
+  var 시장데이터 = []
+
   let num = parseInt(req.params.id);
   request(market_api_url, function (err, response, body) {
     const jsonData = body;
     const obj = JSON.parse(jsonData);
-
+  
     for(let i = 0; i < 7; i++){
       시장데이터[i] = obj.data[i];
     }
-
+    
     res.render('centerMarket', {"데이터" : 시장데이터[num]});
   })
   
