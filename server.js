@@ -19,22 +19,24 @@ app.get('/', (req, res) => {
 })
 
 // Routes 부분
-app.use('/example', require('./routes/example')); // 1
+app.use('/market', require('./routes/market')); // 1
 
 
 
 
 
 // DB Connect 부분.
-mongoose.connect(
-  'mongodb+srv://okmlnsunok:jyp1234@cluster0.i8mgpkg.mongodb.net/hk?retryWrites=true&w=majority',
-  {
-     useNewUrlParser: true,
-  }
-)
+// mongoose.connect(
+//   'mongodb+srv://okmlnsunok:jyp1234@cluster0.i8mgpkg.mongodb.net/hk?retryWrites=true&w=majority',
+//   {
+//      useNewUrlParser: true,
+//   }
+// )
 
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error: "));
-db.once("open", function () {
-  console.log("Connected successfully");
-});
+// const db = mongoose.connection;
+// db.on("error", console.error.bind(console, "connection error: "));
+// db.once("open", function () {
+//   console.log("Connected successfully");
+// });
+
+
