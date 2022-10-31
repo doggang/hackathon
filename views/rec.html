@@ -72,9 +72,9 @@
     
     <article>
         <div id="recArticle">
-            <p>시장 AI 추천</p>
+            <p id="recTitle">시장 AI 추천</p>
             <p id="algorithm_title">상품권을 사용할 수 있나요?</p>
-            <div>
+            <div id="algorithm_content">
                 <div id="yesBtn" onclick="yes()">네!</div>
                 <div id="noBtn" onclick="no()">아니요!</div>
             </div>
@@ -130,7 +130,58 @@
             console.log("parkScore" + parkScore);
             console.log("toiletScore" + toiletScore);
             console.log("scaleScore" + scaleScore);
-            location.href="./centerMarket.html";
+            console.log("newScore" + newScore);
+
+            if(parkScore==0 && toiletScore==0 && scaleScore==0 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==0 && scaleScore==0 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==0 && toiletScore==1 && scaleScore==0 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==0 && toiletScore==0 && scaleScore==1 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else  if(parkScore==0 && toiletScore==0 && scaleScore==0 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==1 && scaleScore==0 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==0 && scaleScore==1 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==0 && scaleScore==0 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==0 && toiletScore==1 && scaleScore==1 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==0 && toiletScore==1 && scaleScore==0 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==0 && toiletScore==0 && scaleScore==1 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==1 && scaleScore==1 &&newScore==0){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==1 && scaleScore==0 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==0 && scaleScore==1 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==0 && toiletScore==1 && scaleScore==1 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+            else if(parkScore==1 && toiletScore==1 && scaleScore==1 &&newScore==1){
+                location.href="./centerMarket.html";
+            }
+
+            
         }
     }
 
@@ -156,7 +207,7 @@
             console.log("parkScore" + parkScore);
             console.log("toiletScore" + toiletScore);
             console.log("scaleScore" + scaleScore);
-            location.href="./centerMarket.html";
+            alert("추천 안할게욥!");
         }
     }
 </script>

@@ -7,6 +7,15 @@
     margin: 100px 0 40px;
     background-color: #9C836D;
 }
+#plus_wrap1{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    left: 0%;
+    margin: 100px 0 40px;
+    background-color: #9C836D;
+    margin-top: -50px;
+}
 #plus_content{
     float: right;
     width: auto;
@@ -14,6 +23,15 @@
     line-height: 40px;
     margin-right: 10px;
     color: white;
+}
+#plus_content1{
+    float: left;
+    margin-left: 10px;
+    width: auto;
+    height: 100%;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
 }
 #plus{
     float: right;

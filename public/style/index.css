@@ -18,7 +18,7 @@ a{
     justify-content: center;
     align-items: center;
     color:black;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 #main_title{
     position: absolute;
@@ -96,7 +96,23 @@ section{
 #section_content_first{
 
 }
-
+#weather{
+    position: relative;
+    left: 50%;
+    margin-left: -42%;
+    width: 84%;
+}
+#weather-table{
+    width: 100%;
+    margin-bottom: 100px;
+}
+td{
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #9C836D;
+    border-collapse: collapse;
+}
 /*--------------반응형-------------*/
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/

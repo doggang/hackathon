@@ -100,9 +100,52 @@ section{
     top: 50px;
     width: 100%;
     height: 400px;
-    background-color: gray;
 }
-
+#recTitle{
+    width: 100%;
+    background-color: #9C836D;
+    font-size: 28px;
+    padding: 5px 0 5px 10px;
+    color: white;
+}
+#algorithm_title{
+    margin-top: 30px;
+    font-size: 24px;
+    width: 301px;
+    position: relative;
+    left: 50%;
+    margin-left: -150.5px;
+    padding: 15px 0;
+    text-align: center;
+}
+#algorithm_content{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 75px);
+    line-height: 300px;
+    font-size: 30px;
+}
+#yesBtn{
+    width: 50%;
+    text-align: center;
+    height: calc(100% - 30px);
+}
+#yesBtn:hover{
+    cursor:pointer;
+    background-color: rgb(243, 243, 243);
+    transition-duration: 0.2s;
+}
+#noBtn{
+    width: 50%;
+    text-align: center;
+    height: calc(100% - 30px);
+    border-left: none;
+}
+#noBtn:hover{
+    cursor:pointer;
+    background-color: rgb(243, 243, 243);
+    transition-duration: 0.2s;
+}
 /*--------------반응형-------------*/
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
