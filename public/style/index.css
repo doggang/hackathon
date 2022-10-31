@@ -105,13 +105,32 @@ section{
 #weather-table{
     width: 100%;
     margin-bottom: 100px;
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+}
+th{
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #efefef;
+    text-align: center;
+    vertical-align:middle;
 }
 td{
-    width: 30px;
-    text-align: center;
-    height: 30px;
-    border: 1px solid #9C836D;
-    border-collapse: collapse;
+  font-size: 14px;
+  width: 7.5%;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align:middle;
+}
+#weatherTd{
+    font-size: 13px;
 }
 /*--------------반응형-------------*/
 

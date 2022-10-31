@@ -102,11 +102,10 @@
         <div id="plus_wrap1">
             <p id="plus_content1">현재 기상</p>
         </div>
-        <span><%= date %></span>
         <table id="weather-table" class="table align-middle mt-1">
             <thead class="table-info">
             <tr>
-                <td>시간</td>
+                <th>시간</th>
                 <% for(let i=0; i<hourly.length; i++) {%>
                 <td><%= hourly[i][0] %>시</td>
                 <% }%>
@@ -114,27 +113,27 @@
             </thead>
             <tbody>
             <tr>
-                <td>온도</td>
+                <th>온도</th>
                 <% for(let i=0; i<hourly.length; i++) {%>
                 <td><%= hourly[i][1] %>℃</td>
                 <% }%>
             </tr>
             <tr>
-                <td>체감온도</td>
+                <th>체감온도</th>
                 <% for(let i=0; i<hourly.length; i++) {%>
                 <td><%= hourly[i][2] %>℃</td>
                 <% }%>
             </tr>
             <tr>
-                <td>습도</td>
+                <th>습도</th>
                 <% for(let i=0; i<hourly.length; i++) {%>
                 <td><%= hourly[i][4] %>%</td>
                 <% }%>
             </tr>
             <tr>
-                <td>기상</td>
+                <th>기상</th>
                 <% for(let i=0; i<hourly.length; i++) {%>
-                <td><%= hourly[i][3] %></td>
+                <td id="weatherTd"><%= hourly[i][3] %></td>
                 <% }%>
             </tr>
             </tbody>
