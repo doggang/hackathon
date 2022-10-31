@@ -100,7 +100,10 @@
     var parkScore=0;
     var toiletScore=0;
     var scaleScore=0;
+    var newScore=0;
 
+    var pageNum=0;
+    
     function yes(){
         if(count==0){
             document.getElementById("algorithm_title").innerHTML = "주차장이 있나요?";
@@ -114,11 +117,20 @@
             document.getElementById("algorithm_title").innerHTML = "규모가 큰가요?";
             count++;
             scaleScore++;
+        }else if(count==3){
+            document.getElementById("algorithm_title").innerHTML = "생긴지 얼마 안되었나요?";
+            count++;
+            newScore++;
+        }else if(count==4){
+            document.getElementById("algorithm_title").innerHTML = "추천해드릴게요!";
+            count++;   
+        }
+            else if(count==5){
             console.log(count);
             console.log("parkScore" + parkScore);
             console.log("toiletScore" + toiletScore);
             console.log("scaleScore" + scaleScore);
-
+            location.href="./centerMarket.html";
         }
     }
 
@@ -132,10 +144,19 @@
         }else if(count==2){
             document.getElementById("algorithm_title").innerHTML = "규모가 큰가요?";
             count++;
+        }else if(count==3){
+            document.getElementById("algorithm_title").innerHTML = "생긴지 얼마 안되었나요?";
+            count++;
+            newScore++;
+        }else if(count==4){
+            document.getElementById("algorithm_title").innerHTML = "추천해드릴게요!";
+            count++;   
+        }else if(count==5){
             console.log(count);
             console.log("parkScore" + parkScore);
             console.log("toiletScore" + toiletScore);
             console.log("scaleScore" + scaleScore);
+            location.href="./centerMarket.html";
         }
     }
 </script>
