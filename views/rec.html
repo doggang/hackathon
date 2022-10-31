@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>춘천, 놀자!</title>
+    <link rel="stylesheet" href="../public/style/rec.css">
+    <link rel="stylesheet" href="../public/style/recHeader.css">
+    <link rel="stylesheet" href="../public//style/nav.css">
+    <link rel="stylesheet" href="../public//style/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/header_img.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+
+    
+    
+    <div id='main_img'></div>
+
+    <header>
+        <a id="title" href="../index.html">
+            <img id='title_img' src="/img/header_img.png" alt="">
+            <div id="title_name">쇼핑, 춘천!</div>
+        </a>
+        
+        <ul id="nav">
+            <li class="nav_li">
+                <a href="./introduce.html">춘천 소개</a>
+            </li>
+            <li class="nav_li">                
+                <a href="./place.html">재래시장 소개</a>
+            </li>
+            <li class="nav_li">
+                <a href="./rec.html">시장 AI추천</a>
+            </li>
+            
+            
+        </ul>
+        
+        <div class="header">
+            <div class="menu_btn">
+                <a href="#">
+                    <img id="menu_img" src="/img/header_img.png">
+                </a>
+            </div>
+        </div>
+        <div class="menu_bg"></div>
+        <div class="sidebar_menu">
+            <div class="close_btn">
+                <a href="#">
+                    <img id="cancel" src="/img/cancel.png">
+                </a>
+            </div>
+            <ul class="menu_wrap">
+                <a href="./introduce.jsp"><li id="menu_first">웹페이지 소개</li></a>
+                <a href="./place.jsp"><li id="menu_second">관광지 소개</li></a>
+                <a href="./question.jsp"><li>자유 게시판</li></a>
+                
+	            <a href="./login.jsp"><li>로그인</li></a>
+	            
+	            <a href="./logout.jsp"><li id="menu_third">로그아웃</li></a>
+	            
+            </ul>
+        </div>
+            
+    </header>
+    
+    <article>
+        <div id="recArticle">
+            <p>시장 AI 추천</p>
+            <p id="algorithm_title">상품권을 사용할 수 있나요?</p>
+            <div>
+                <div id="yesBtn" onclick="yes()">네!</div>
+                <div id="noBtn" onclick="no()">아니요!</div>
+            </div>
+        </div>
+    </article>
+    
+    <footer>
+        <div id="footer_content">
+            <p id="footer_title">INFORMATION</p>
+            <div id="footer_in">
+                Developer : Kim Do Hyun<br>
+                E-mail : rlaehgusqp@naver.com<br>
+                GitHub : <a href="https://github.com/doggang">https://github.com/doggang</a><br> 
+                Web Server - FrontEnd
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="../public/js/index_header.js"></script>
+<script>
+    var count=0;
+    var parkScore=0;
+    var toiletScore=0;
+    var scaleScore=0;
+
+    function yes(){
+        if(count==0){
+            document.getElementById("algorithm_title").innerHTML = "주차장이 있나요?";
+            count++;
+            parkScore++;
+        }else if(count==1){
+            document.getElementById("algorithm_title").innerHTML = "공중화장실이 있나요?";
+            count++;
+            toiletScore++;
+        }else if(count==2){
+            document.getElementById("algorithm_title").innerHTML = "규모가 큰가요?";
+            count++;
+            scaleScore++;
+            console.log(count);
+            console.log("parkScore" + parkScore);
+            console.log("toiletScore" + toiletScore);
+            console.log("scaleScore" + scaleScore);
+
+        }
+    }
+
+    function no(){
+        if(count==0){
+            document.getElementById("algorithm_title").innerHTML = "주차장이 있나요?";
+            count++;
+        }else if(count==1){
+            document.getElementById("algorithm_title").innerHTML = "공중화장실이 있나요?";
+            count++;
+        }else if(count==2){
+            document.getElementById("algorithm_title").innerHTML = "규모가 큰가요?";
+            count++;
+            console.log(count);
+            console.log("parkScore" + parkScore);
+            console.log("toiletScore" + toiletScore);
+            console.log("scaleScore" + scaleScore);
+        }
+    }
+</script>
+</html>
