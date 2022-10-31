@@ -24,7 +24,29 @@
     color: white;
     font-size: 25px;
 }
-
+tr{
+    width: 100%;
+}
+th{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #efefef;
+    text-align: center;
+    vertical-align:middle;
+    width: 30%;
+}
+td{
+  font-size: 18px;
+  width: 70%;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align:middle;
+}
 /*--------------반응형-------------*/
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/

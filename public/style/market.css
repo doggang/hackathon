@@ -112,10 +112,9 @@ section{
     position: relative;
     top: 50px;
     width: 100%;
-    border: 1px solid black;
     list-style-type: none;
     font-size: 20px;
-    border-collapse: collapse;
+    border-top: 1px solid #ccc;
 }
 tr{
     height: 50px;
