@@ -94,8 +94,12 @@ app.get('/market/:id', (req, res) => {
   })
 })
 
-app.get('/recommend', (req, res) => {
+app.get('/rec', (req, res) => {
   res.render('rec');
+})
+
+app.get('/intro', (req, res) => {
+  res.render('introduce');
 })
 
 
