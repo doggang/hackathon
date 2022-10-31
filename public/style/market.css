@@ -10,7 +10,7 @@ a{
 /*----------article---------*/
 #main_img{
     width: 100%;
-    height: 1000px;
+    height: 84px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,6 @@ article{
     position: relative;
     left: 8%;
     width: 84%;
-    display: flex;
     justify-content: space-between;
     margin-bottom: 130px;
 }
@@ -95,6 +94,35 @@ section{
 
 }
 
+#map_wrap{
+    display: flex;
+    width: 100%;
+}
+#img{
+    width: 45%;
+}
+#map{
+    position: relative;
+    right: 0;
+    width: 45%;
+    margin-left: 10%;
+}
+
+#ul_img{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    border: 1px solid black;
+    list-style-type: none;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+tr{
+    height: 50px;
+}
+th{
+    width: 30%;
+}
 /*--------------반응형-------------*/
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/

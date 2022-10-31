@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>춘천, 놀자!</title>
+    <link rel="stylesheet" href="../public//style/market.css">
+    <link rel="stylesheet" href="../public//style/marketHeader.css">
+    <link rel="stylesheet" href="../public//style/marketnav.css">
+    <link rel="stylesheet" href="../public//style/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../public/img/header_img.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+
+    <div id='main_img'></div>
+
+    <header>
+        <a id="title" href="/">
+            <img id='title_img' src="/img/header_img.png" alt="">
+            <div id="title_name">쇼핑, 춘천!</div>
+        </a>
+        
+        <ul id="nav">
+            <li class="nav_li">
+                <a href="./introduce.html">춘천 소개</a>
+            </li>
+            <li class="nav_li">                
+                <a href="./place.html">재래시장 소개</a>
+            </li>
+            <li class="nav_li">
+                <a href="./rec.html">시장 AI추천</a>
+            </li>
+            
+            
+        </ul>
+        
+        <div class="header">
+            <div class="menu_btn">
+                <a href="#">
+                    <img id="menu_img" src="/img/header_img.png">
+                </a>
+            </div>
+        </div>
+        <div class="menu_bg"></div>
+        <div class="sidebar_menu">
+            <div class="close_btn">
+                <a href="#">
+                    <img id="cancel" src="/public/img/cancel.png">
+                </a>
+            </div>
+            <ul class="menu_wrap">
+                <a href="./introduce.jsp"><li id="menu_first">웹페이지 소개</li></a>
+                <a href="./place.jsp"><li id="menu_second">관광지 소개</li></a>
+                
+            </ul>
+        </div>
+        </header>
+        <nav>
+            <div id="plus_wrap">
+                <a id="plus_content" href="./detail1.jsp">세부 정보</a><span id="plus_content">></span><a id="plus_content" href="../place.jsp">관광지 소개</a><span id="plus_content">></span><a id="plus_content" href="../index.jsp">Main</a>
+            </div>
+        </nav>
+    
+        <article>
+            <div id="map_wrap">
+                <img id="img" src="../public/img/main.jpg" alt="">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167293.38479789617!2d127.43623193148045!3d37.77236548762267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3563253f15656e01%3A0x2b921ba7d2ad829a!2z7IGY652g7ZSE656R7Iqk!5e0!3m2!1sko!2skr!4v1655121173582!5m2!1sko!2skr" 
+                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="intro">
+
+                <table id="ul_img" border="1">
+                    <tr>
+                        <th>시장명</th><td></td>
+                    </tr>
+                    <tr>
+                        <th>주소</th><td></td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th><td></td>
+                    </tr>
+                    <tr>
+                        <th>상품권</th><td></td>
+                    </tr>
+                    <tr>
+                        <th>점포수</th><td></td>
+                    </tr>
+                    <tr>
+                        <th>화장실 보유 여부</th><td></td>
+                    </tr>
+                    <tr>
+                        <th>주차장 보유 여부</th><td></td>
+                    </tr>
+                </table>
+        </article>
+    
+    </body>
+    <script src="../public/js/index_header.js"></script>
+    </html>
