@@ -32,6 +32,9 @@ app.get('/', (req, res) => {
 
     for (let i = 0; i < 12; i++) {
       let hours = 현재시각 + i;
+      if(hours > 24){
+        hours -= 24;
+      }
       시간대별_날씨.push([hours, Math.round(obj.hourly[i].temp), Math.round(obj.hourly[i].feels_like), obj.hourly[i].weather[0].description, obj.hourly[i].humidity])
     }
 
