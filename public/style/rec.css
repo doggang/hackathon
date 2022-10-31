@@ -41,7 +41,8 @@ article{
     left: 8%;
     width: 84%;
     display: block;
-    margin-bottom: 130px;
+    margin-bottom: 200px;
+    margin-top: -60px;
 }
 
 .art_wrap{
@@ -100,12 +101,18 @@ section{
     width: 100%;
     height: 400px;
 }
-#recTitle{
+#recCol{
     width: 100%;
+    height: 30px;
     background-color: #9C836D;
-    font-size: 28px;
+    font-size: 24px;
     padding: 5px 0 5px 10px;
     color: white;
+}
+#recTitle{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
 }
 #algorithm_title{
     margin-top: 30px;

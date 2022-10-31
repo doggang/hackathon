@@ -18,4 +18,9 @@ footer{
 #footer_in{
     margin-top: 20px;
     font-size: 15px;
+    padding: 0 40px;
+}
+#footer_in_wrap{
+    display: flex;
+    justify-content: center;
 }
